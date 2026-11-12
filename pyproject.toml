@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydisk-analyzer"
+description = "A small, read-only Linux disk usage analyzer."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dynamic = ["version"]
+dependencies = []
+keywords = ["disk", "usage", "analyzer", "cli", "linux"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+pydisk = "pydisk.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy"]
+
+[tool.setuptools]
+packages = ["pydisk"]
+
+[tool.setuptools.dynamic]
+version = { attr = "pydisk.__version__" }
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
