@@ -5,7 +5,10 @@ scans a directory tree, ranks the largest files and folders, filters files by
 extension or size, browses results in a terminal UI, and exports JSON or
 plain-text reports.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dc7c0bb (formatting and changes to the  README.md)
 ## Features
 
 - Recursive directory scanning with `os.scandir`
