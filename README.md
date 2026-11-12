@@ -5,8 +5,6 @@ scans a directory tree, ranks the largest files and folders, filters files by
 extension or size, browses results in a terminal UI, and exports JSON or
 plain-text reports.
 
-The original build specification that this project was developed from is kept
-in [PROMPT.md](PROMPT.md).
 
 ## Features
 
